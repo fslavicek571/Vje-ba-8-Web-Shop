@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout | Web Shop</title>
+</head>
+<body>
+    <h1>Web shop</h1>
+
+    <h2>Checkout</h2>
+<form action="success.html" method="get">
+    <input name="sender_first_name" type="text" placeholder="First name" required>
+    <br><input name="sender_last_name" type="text" placeholder="Last name" required>
+    <br><input name="sender_email" type="email" placeholder="Email Address" required>
+    <br><input name="sender_phone" type="tel" placeholder="Telephone number" required>
+    <br><input name="sender_address_line_1" type="text" placeholder="Address 1" required>
+    <br><input name="sender_address_line_2" type="text" placeholder="Address 2">
+    <br><input name="sender_city" type="text" placeholder="City" required>
+    <br><input name="sender_zip" type="text" placeholder="Zip code" required>
+    <br><select name="sender_country" required>
+        <option value="hr">HR</option>
+        <option value="rs">RS</option>
+        <option value="ba">BA</option>
+        <option value="si">SI</option>
+        <option value="me">ME</option>
+        <option value="ak">AL</option>
+        <option value="mk">MK</option>
+    </select>
+    <br><label><input name="payment_method" type="radio" value="credit" required>Credit</label>
+    <label><input name="payment_method" type="radio" value="debit" required>Debit</label>
+    <label><input name="payment_method" type="radio" value="paypal" required>Paypal</label>
+    <br><input name="payment_card_hold" type="text" placeholder="Payment card hold" required>
+    <br><input name="payment_card_number" type="text" placeholder="Payment card number" required>
+    <br><label>Payment card expiration date<input name="payment_card_expiration_month" type="number" placeholder="Month" required>
+    <input name="payment_card_expiration_month" type="number" placeholder="Year" required></label>
+    <button>Submit</button>
+</form>
+    <!-- checkout form -->
+</body>
+</html>
